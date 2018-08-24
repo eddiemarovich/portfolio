@@ -1,0 +1,17 @@
+.title {
+  text-align: center;
+  margin-top: 50%;
+}
+
+.content-section {
+  height: 100vh;
+  background-color: grey;
+}
+
+.content-section--hovered {
+  background-color: black;
+}
+
+.content-section--selected {
+  background-color: lightgrey;
+}
