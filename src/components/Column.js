@@ -4,15 +4,29 @@ import './styles.css'
 
 
 class Column extends Component {
+
+  displaySectionContent() {
+    if (this.props.currentHoveredSection === this.props.title){
+      return this.props.content
+    }
+    // return
+  }
+
   render() {
     const { title } = this.props
     return (
+      <div className='content-container'>
         <h1
-           className='title'
+           className='content-container__title'
            onClick={(name) => this.props.updateSelectedState(title)}
            onMouseEnter={(name) => this.props.updateHoveredState(title)}
            onMouseLeave={(name) => this.props.updateHoveredState(title)}
            >{title}</h1>
+        <p
+          className='content-container__content'
+          >{this.displaySectionContent()}</p>
+      </div>
+
     )
   }
 }

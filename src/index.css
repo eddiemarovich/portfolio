@@ -1,6 +1,5 @@
 body {
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+  font-family: 'HelveticaNeue-Thin', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  /*font-weight: lighter;*/
   overflow-x: hidden;
-  
 }

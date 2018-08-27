@@ -6,6 +6,10 @@ import eM from './assets/EM.svg'
 import fullName from './assets/EDDIEMAROVICH.svg'
 import developer from './assets/DEVELOPER.svg'
 import Column from './components/Column'
+import myFace from './assets/myface.jpg'
+import myFace2 from './assets/myface2.jpg'
+import houseDress from './assets/housedress.jpg'
+import belaytionship from './assets/belaytionship.png'
 import './App.css'
 
 import data from './json'
@@ -18,6 +22,10 @@ class App extends Component {
       hoveredSection: null,
       selectedSection: null
     }
+  }
+
+  componentDidUpdate() {
+    console.log(this.state);
   }
 
   updateHoveredState = (title) => {
@@ -36,9 +44,29 @@ class App extends Component {
     }
   }
 
+  renderBackgroundImage(title) {
+    if (this.state.hoveredSection === 'ABOUT' && this.state.hoveredSection === title){
+      return myFace
+    } else if (this.state.hoveredSection === 'PORTFOLIO' && this.state.hoveredSection === title){
+      return belaytionship
+    } else if (this.state.hoveredSection === 'CONTACT' && this.state.hoveredSection === title){
+      return myFace2
+    }
+  }
+
   render() {
     return (
+      <div className={classNames('home', {
+        'home--inactive': this.state.hoveredSection !== null
+      })}>
         <Row>
+          <div className="home__logo">
+            <div className="home__logo-main">
+              <img src={eM} style={{height:'250px'}} />
+              <img src={fullName} className='logo__full-name'/>
+            </div>
+            <img className="home__logo-side" src={developer}/>
+          </div>
           {data.map(e => {
             return (
               <Col
@@ -49,17 +77,24 @@ class App extends Component {
                   'content-section--selected': this.state.selectedSection === `${e.title}`
                 }
               )}
+                style={{backgroundImage: `url(${this.renderBackgroundImage(e.title)})`}}
                 key={e.id}
-                md={4}
+                xs={4}
                 >
                 <Column
                   title={e.title}
+                  content={e.content}
                   updateSelectedState={(title) => this.updateSelectedState(title)}
-                  updateHoveredState={(title) => this.updateHoveredState(title)}/>
+                  updateHoveredState={(title) => this.updateHoveredState(title)}
+                  currentHoveredSection={this.state.hoveredSection}/>
               </Col>
             )
           })}
+          <div className='home__contact'>
+
+          </div>
         </Row>
+      </div>
     )
   }
 }

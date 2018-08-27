@@ -1,1 +1,115 @@
 
+.home {
+  background-image: url('./assets/mountains.jpg');
+  background-size: cover;
+  filter: grayscale(.01);
+  background-blend-mode: darken;
+
+}
+
+.home--inactive {
+  background-image: url('./assets/mountains.jpg');
+  background-size: cover;
+  filter: grayscale(1);
+  background-blend-mode: darken;
+  -webkit-animation: background-gray 1s 1;
+  -moz-animation:    background-gray 1s 1;
+  -o-animation:      background-gray 1s 1;
+  animation:         background-gray 1s 1;
+}
+
+.home__logo {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  z-index: -1;
+  padding-left: 30px;
+}
+
+.home__logo-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__logo-side {
+  height: 195px;
+  margin-top: 45px;
+  margin-left: -10px;
+}
+
+.logo__full-name {
+  height: 41px;
+  margin-top: -45px;
+}
+
+.content-container__title {
+  text-align: center;
+  margin-top: 75%;
+}
+
+
+.content-container__content {
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 34px;
+}
+
+.content-section {
+  height: 100vh;
+}
+
+.content-section--hovered {
+  color: #ffffff;
+  background-color: #323232;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  repeat: no-repeat;
+  -webkit-animation: image-fade-in 1s 1;
+  -moz-animation:    image-fade-in 1s 1;
+  -o-animation:      image-fade-in 1s 1;
+  animation:         image-fade-in 1s 1;
+  box-shadow: 3px 0 5px #323232, -3px 0 5px #323232, 3px 0 5px #323232;
+}
+
+.content-section--selected {
+  background-color: lightgrey;
+}
+
+@-webkit-keyframes image-fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes image-fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes image-fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes image-fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes background-gray {
+  0% { filter: grayscale(.01); }
+  100% { filter: grayscale(1); }
+}
+@-moz-keyframes background-gray {
+  0% { filter: grayscale(.01); }
+  100% { filter: grayscale(1); }
+}
+@-o-keyframes background-gray {
+  0% { filter: grayscale(.01); }
+  100% { filter: grayscale(1); }
+}
+@keyframes background-gray {
+  0% { filter: grayscale(.01); }
+  100% { filter: grayscale(1); }
+}
