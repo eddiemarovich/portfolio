@@ -12,10 +12,10 @@
   background-size: cover;
   filter: grayscale(1);
   background-blend-mode: darken;
-  -webkit-animation: background-gray 1s 1;
-  -moz-animation:    background-gray 1s 1;
-  -o-animation:      background-gray 1s 1;
-  animation:         background-gray 1s 1;
+  -webkit-animation: background-gray .5s 1;
+  -moz-animation:    background-gray .5s 1;
+  -o-animation:      background-gray .5s 1;
+  animation:         background-gray .5s 1;
 }
 
 .home__logo {
@@ -44,18 +44,22 @@
   margin-top: -45px;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .content-container__title {
   text-align: center;
   margin-top: 75%;
 }
 
-
 .content-container__content {
-  font-size: 24px;
+  font-size: 32px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-left: 34px;
+  text-align: center;
+  padding: 3px;
 }
 
 .content-section {
@@ -69,10 +73,10 @@
   background-position: center;
   filter: grayscale(1);
   repeat: no-repeat;
-  -webkit-animation: image-fade-in 1s 1;
-  -moz-animation:    image-fade-in 1s 1;
-  -o-animation:      image-fade-in 1s 1;
-  animation:         image-fade-in 1s 1;
+  -webkit-animation: image-fade-in .5s 1;
+  -moz-animation:    image-fade-in .5s 1;
+  -o-animation:      image-fade-in .5s 1;
+  animation:         image-fade-in .5s 1;
   box-shadow: 3px 0 5px #323232, -3px 0 5px #323232, 3px 0 5px #323232;
 }
 

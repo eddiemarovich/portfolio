@@ -9,7 +9,6 @@ class Column extends Component {
     if (this.props.currentHoveredSection === this.props.title){
       return this.props.content
     }
-    // return
   }
 
   render() {

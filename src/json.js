@@ -7,12 +7,12 @@ const data = [
   {
     title: 'PORTFOLIO',
     id: 2,
-    content: "These are some of the projects I've worked on."
+    content: "Check it out."
   },
   {
     title: 'CONTACT',
     id: 3,
-    content: "Like what you see? Want to get in touch? You should, we can make something cool."
+    content: "Lets make something."
   }
 ]
 

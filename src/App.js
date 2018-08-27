@@ -2,16 +2,17 @@ import React, { Component } from 'react'
 import { Row, Col, Grid } from 'react-bootstrap'
 import classNames from 'classnames'
 
+import Column from './components/Column'
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
 import eM from './assets/EM.svg'
 import fullName from './assets/EDDIEMAROVICH.svg'
 import developer from './assets/DEVELOPER.svg'
-import Column from './components/Column'
-import myFace from './assets/myface.jpg'
-import myFace2 from './assets/myface2.jpg'
-import houseDress from './assets/housedress.jpg'
+import myFace from './assets/myface.png'
+import myFace2 from './assets/myface2.png'
 import belaytionship from './assets/belaytionship.png'
 import './App.css'
-
 import data from './json'
 
 class App extends Component {
@@ -54,11 +55,9 @@ class App extends Component {
     }
   }
 
-  render() {
-    return (
-      <div className={classNames('home', {
-        'home--inactive': this.state.hoveredSection !== null
-      })}>
+  renderDetails() {
+    if (this.state.selectedSection === null){
+      return (
         <Row>
           <div className="home__logo">
             <div className="home__logo-main">
@@ -94,6 +93,28 @@ class App extends Component {
 
           </div>
         </Row>
+      )
+    } else if (this.state.selectedSection === 'ABOUT'){
+      return (
+        <About />
+      )
+    } else if (this.state.selectedSection === 'PORTFOLIO') {
+      return (
+        <Portfolio />
+      )
+    } else if (this.state.selectedSection === 'CONTACT') {
+      return (
+        <Contact />
+      )
+    }
+  }
+
+  render() {
+    return (
+      <div className={classNames('home', {
+        'home--inactive': this.state.hoveredSection !== null
+      })}>
+      {this.renderDetails()}
       </div>
     )
   }
