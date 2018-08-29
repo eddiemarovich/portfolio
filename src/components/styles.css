@@ -1,0 +1,31 @@
+.section {
+  height: 100vh;
+  padding:60px;
+}
+
+.section__container {
+  /*background-color: #ffffff;*/
+  height: 80vh;
+}
+
+.section__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.section__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__content {
+  font-size: 20px;
+}

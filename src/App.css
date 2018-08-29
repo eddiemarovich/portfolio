@@ -4,6 +4,7 @@
   background-size: cover;
   filter: grayscale(.01);
   background-blend-mode: darken;
+  height: 100vh;
 
 }
 
@@ -53,6 +54,23 @@
 .content-container__title {
   text-align: center;
   margin-top: 75%;
+  color: black;
+
+}
+.content-container__title:hover {
+  color: white;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color:#ffffff;
+}
+
+.link--active {
+  color: #ffffff;
 }
 
 .content-container__content {
@@ -60,6 +78,7 @@
   width: 100%;
   text-align: center;
   padding: 3px;
+  margin-top: 120px;
 }
 
 .content-section {
