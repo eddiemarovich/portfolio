@@ -40,41 +40,25 @@ class Home extends Component {
     const { hoveredSection, selectedSection } = this.state
     if (selectedSection === null){
       return (
-        <Row  className={classNames('home', {'home--inactive': hoveredSection !== null})}>
-
         <Main
           updateSelectedState={(name) => this.updateSelectedState(name)}
           updateHoveredState={(name) => this.updateHoveredState(name)}
           hoveredSection={hoveredSection}
           selectedSection={selectedSection}/>
-        </Row>
-
       )
     } else if (selectedSection === 'about'){
       return (
-        <Row  className={classNames('home', {'home--inactive': hoveredSection !== null})}>
-
         <About section={selectedSection} />
-      </Row>
-
      )
    }
    else if (selectedSection === 'portfolio'){
       return (
-        <Row  className={classNames('home', {'home--inactive': hoveredSection !== null})}>
-
         <Portfolio section={selectedSection} />
-      </Row>
-
      )
    }
    else if (selectedSection === 'contact'){
       return (
-        <Row  className={classNames('home', {'home--inactive': hoveredSection !== null})}>
-
         <Contact section={selectedSection} hey='hey'/>
-      </Row>
-
      )
    }
   }
@@ -82,10 +66,9 @@ class Home extends Component {
   render() {
     const { hoveredSection, selectedSection } = this.state
       return (
-        <div>
+        <Row className={classNames('home', {'home--inactive': hoveredSection !== null})}>
           {this.contentToRender()}
-          
-        </div>
+        </Row>
       )
     }
 }

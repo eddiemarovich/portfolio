@@ -2,8 +2,10 @@ body {
   font-family: 'HelveticaNeue-Thin', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   /*font-weight: lighter;*/
   overflow-x: hidden;
+  background-image: url('./assets/mountains.jpg');
+  background-size: cover;
 }
 
 a {
-  text-decoration: none;
+  /*text-decoration: none;*/
 }

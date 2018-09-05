@@ -10,7 +10,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="home">
+      <div className="section">
         <Grid className="section__container">
           <SectionHeader section={'About'} closeSection={() => this.props.closeSection()}/>
           <Row>

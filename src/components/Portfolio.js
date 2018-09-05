@@ -4,43 +4,82 @@ import { Grid, Col, Row, Carousel } from 'react-bootstrap'
 import SectionHeader from './SectionHeader'
 import './styles.css'
 import belaytionship from '../assets/belaytionship.png'
+import ie from '../assets/ie.png'
+import ie2 from '../assets/ie2.png'
+import jazzed from '../assets/jazzed.png'
+
 
 class Portfolio extends Component {
 
-  componentDidMount() {
-    console.log(this.props.closeSection)
-  }
 
   render() {
     return (
-        <Grid className="section__container">
+      <div className="section">
+        <Grid className="section__container portfolio">
           <SectionHeader section='Portfolio' closeSection={() => this.props.closeSection()} />
           <Row className="section__row">
-            <Carousel interval={5000} pauseOnHover={true}>
-              <Carousel.Item>
-                <Col sm={1}>
-                  <img src={belaytionship} alt='belaytionship' style={{height: '160px'}}/>
-                </Col>
-                <Col sm={9} smOffset={1}>
-                  <p className="section__content">
-                    I live in Boulder, CO, and when I’m not sitting in front of my computer I try to spend as much time rock climbing as possible. Boulder is a pretty great place for that sort of thing, but what good would the ability to work from wherever be if I wasn’t working from… wherever.  Travel was a key part of the inspiration for wanting to become a developer, and little did I know that writing code would soon become another passion. I couldn’t be more psyched for the opportunity to combine so much of .
-                  </p>
-                </Col>
+            <Carousel
+              interval={5000}
+              pauseOnHover={true}
+              indicators={false}
+              >
+              <Carousel.Item className="carousel-item">
+                <Row>
+                  <h1 className="section__title">INTELLIGENT EDUCATION</h1>
+                  <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Mongo, Node</p>
+                </Row>
+                <Row>
+                  <Col sm={10} smOffset={1}>
+                    <p className="section__content">
+                      Intelligent Education is an online education platform that allows users to sign up for, and take classes with renowned instructors at the top of their respective fields.  This application hosts a wide range of custom features, including some that allow users to keep track of each lesson’s progress, test their knowledge with quizzes, and take notes that are synced to a specific time in each lesson’s video.
+                    </p>
+                  </Col>
+                </Row>
+                <Row className="picture-row">
+                    <img src={ie} alt='intelligent education' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/>
+                    <img src={ie2} alt='intelligent education2' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/>
+                </Row>
+
               </Carousel.Item>
               <Carousel.Item>
-                <Col sm={1}>
-                  <img src={belaytionship} alt='belaytionship' style={{height: '160px'}}/>
-                </Col>
-                <Col sm={9} smOffset={1}>
-                  <p className="section__content">
-                    I live in Boulder, CO, and when I’m not sitting in front of my computer I try to spend as much time rock climbing as possible. Boulder is a pretty great place for that sort of thing, but what good would the ability to work from wherever be if I wasn’t working from… wherever.  Travel was a key part of the inspiration for wanting to become a developer, and little did I know that writing code would soon become another passion. I couldn’t be more psyched for the opportunity to combine so much of .
-                  </p>
-                </Col>
+                <Row>
+                  <h1 className="section__title">BELAYTIONSHIP</h1>
+                  <p style={{textAlign:'center', marginTop: '20px'}}>ReactNative, Firebase</p>
+
+                </Row>
+                <Row>
+                  <Col smOffset={1} sm={1}>
+                    <img src={belaytionship} alt='belaytionship' style={{height: '220px'}}/>
+                  </Col>
+                  <Col sm={8} smOffset={1}>
+                    <p className="section__content">
+                      Belaytionship is a React Native application that allows users to sign up using their Facebook account and find climbing partners in their area. This is not a dating app, and to remove the element of romance from the app, users are not able to filter their potential matches by neither age or gender. This project has yet to be deployed to the app store, but is a passion project that I am excited to continue building.
+                    </p>
+                  </Col>
+                </Row>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Row>
+                  <h1 className="section__title">JAZZED</h1>
+                  <p style={{textAlign:'center', marginTop: '20px'}}>jQuery, Express, Postgres, Node</p>
+
+                </Row>
+                <Row>
+                  <Col smOffset={1} sm={1}>
+                    <img src={jazzed} alt='jazzed' style={{height: '220px'}}/>
+                  </Col>
+                  <Col sm={8} smOffset={1}>
+                    <p className="section__content">
+                      Jazzed is a mobile first web application designed to allow musicians to sign up as either a student or instructor, and schedule music lessons appropriately in their area. Jazzed was inspired by the difficult and informal process that is often associated with scheduling music lessons with even the most professional musicians out there.  Jazzed: Music lesson made easy.
+                    </p>
+                  </Col>
+                </Row>
               </Carousel.Item>
             </Carousel>
           </Row>
 
         </Grid>
+      </div>
     )
   }
 }

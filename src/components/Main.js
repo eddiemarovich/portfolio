@@ -6,6 +6,7 @@ import slab from '../assets/slab.jpg'
 import myFace from '../assets/myface.jpg'
 import myFace2 from '../assets/myface2.jpg'
 import belaytionship from '../assets/belaytionship.png'
+import './styles.css'
 
 const pictures = {
   climb: slab,
@@ -30,7 +31,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Logo />
+        <Logo selectedSection={this.props.hoveredSection}/>
         <div>
           {data.map(e => {
             return (
