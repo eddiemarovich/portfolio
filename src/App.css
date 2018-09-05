@@ -1,24 +1,3 @@
-
-.home {
-  background-image: url('./assets/mountains.jpg');
-  background-size: cover;
-  filter: grayscale(.01);
-  background-blend-mode: darken;
-  height: 100vh;
-
-}
-
-.home--inactive {
-  background-image: url('./assets/mountains.jpg');
-  background-size: cover;
-  filter: grayscale(1);
-  background-blend-mode: darken;
-  -webkit-animation: background-gray .5s 1;
-  -moz-animation:    background-gray .5s 1;
-  -o-animation:      background-gray .5s 1;
-  animation:         background-gray .5s 1;
-}
-
 .home__logo {
   position: absolute;
   display: flex;

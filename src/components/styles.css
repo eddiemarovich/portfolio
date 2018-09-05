@@ -1,10 +1,17 @@
 .section {
-  height: 100vh;
-  padding:60px;
+  padding: 60px;
 }
 
+
 .section__container {
-  /*background-color: #ffffff;*/
+  background-color: #ffffff;
+  opacity: .95;
+
+}
+
+.portfolio {
+  background-color: #ffffff;
+  opacity: .95;
   height: 80vh;
 }
 
@@ -14,10 +21,40 @@
   justify-content: flex-start;
 }
 
+.picture-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.carousel-control.right{
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.000) 100%);
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right {
+    background-image: -webkit-linear-gradient(right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    background-image: -o-linear-gradient(right,rgba(0,0,0,.5) 0,rgba(0,0,0,.000) 100%);
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+    background-repeat: repeat-x;
+}
+
 .section__header {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .section__close {
@@ -26,6 +63,59 @@
   align-items: center;
 }
 
+.section__close-button:hover {
+  -webkit-animation: rotate-close .5s 1;
+  -moz-animation:    rotate-close .5s 1;
+  -o-animation:      rotate-close .5s 1;
+  animation:         rotate-close .5s 1;
+}
+
 .section__content {
   font-size: 20px;
+  padding: 10px;
+}
+
+.section__content-label {
+  font-size: 60px;
+  color:black;
+
+}
+
+.section__content-label:active {
+  font-size: 60px;
+  color:black;
+  text-decoration: none;
+}
+.section__content-label:focus {
+  font-size: 60px;
+  color:black;
+  text-decoration: none;
+}
+
+.section__content-label:hover {
+  font-size: 60px;
+  color:lightgrey;
+  text-decoration: none;
+}
+
+.contact-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@-webkit-keyframes rotate-close {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(90deg); }
+}
+@-moz-keyframes rotate-close {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(90deg); }
+}
+@-o-keyframes rotate-close {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(90deg); }
+}
+@keyframes rotate-close {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(90deg); }
 }

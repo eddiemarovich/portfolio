@@ -14,7 +14,7 @@ const SectionHeader = (props) => {
         </h1>
       </Col>
       <Col sm={1} smOffset={4} className="section__close">
-        <Link to="/"><img src={close} alt="close" style={{height: '40px'}}/></Link>
+        <Link to="/"><img className="section__close-button" src={close} alt="close" style={{height: '40px'}}/></Link>
       </Col>
     </Row>
   )
