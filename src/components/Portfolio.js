@@ -20,7 +20,7 @@ class Portfolio extends Component {
           <SectionHeader section='Portfolio' closeSection={() => this.props.closeSection()} />
           <Row className="section__row">
             <Carousel
-              interval={5000}
+              interval={500000}
               pauseOnHover={true}
               indicators={false}
               >
@@ -30,15 +30,17 @@ class Portfolio extends Component {
                   <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Mongo, Express, Node</p>
                 </Row>
                 <Row>
-                  <Col sm={10} smOffset={1}>
+                  <Col sm={10} smOffset={1} xs={10} xsOffset={1}>
                     <p className="section__content">
                       Intelligent Education is an online education platform that allows users to sign up for, and take classes with renowned instructors at the top of their respective fields.  This application hosts a wide range of custom features, including some that allow users to keep track of each lesson’s progress, test their knowledge with quizzes, and take notes that are synced to a specific time in each lesson’s video.
                     </p>
                   </Col>
                 </Row>
                 <Row className="picture-row">
+                  {/* <Col xs={11} md={8} mdOffset={1}> */}
                     <a href="https://courses.intelligent.education/" target="_blank"><img src={ie} alt='intelligent education' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
                     <a href="https://courses.intelligent.education/" target="_blank"><img src={ie2} alt='intelligent education2' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                  {/* </Col> */}
                 </Row>
               </Carousel.Item>
               <Carousel.Item>

@@ -6,6 +6,10 @@ body {
   background-size: cover;
 }
 
-a {
-  /*text-decoration: none;*/
+
+@media screen and (max-width: 375px){
+  body {
+    background-color: #ffffff;
+    background-image: none;
+  }
 }
