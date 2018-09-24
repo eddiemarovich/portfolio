@@ -14,7 +14,7 @@ class About extends Component {
         <Grid className="section__container">
           <SectionHeader section={'About'} closeSection={() => this.props.closeSection()}/>
           <Row>
-            <Col sm={10} smOffset={1}>
+            <Col md={10} mdOffset={1} xs={12}>
               <p className="section__content">
                 My name is Eddie Marovich, and I am a software developer. I like building compelling web and mobile applications using the most appropriate tools for the job. I am currently working as a freelance developer, and have had the opportunity to work with some super cool, crazy smart people to bring clients’ ideas to life.
               </p>

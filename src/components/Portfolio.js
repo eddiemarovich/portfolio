@@ -7,7 +7,8 @@ import belaytionship from '../assets/belaytionship.png'
 import ie from '../assets/ie.png'
 import ie2 from '../assets/ie2.png'
 import jazzed from '../assets/jazzed.png'
-
+import post1 from '../assets/post1.png'
+import post2 from '../assets/post2.png'
 
 class Portfolio extends Component {
 
@@ -25,8 +26,8 @@ class Portfolio extends Component {
               >
               <Carousel.Item className="carousel-item">
                 <Row>
-                  <h1 className="section__title">INTELLIGENT EDUCATION</h1>
-                  <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Mongo, Node</p>
+                  <a href="https://courses.intelligent.education/" target="_blank"><h1 className="section__title">INTELLIGENT EDUCATION</h1></a>
+                  <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Mongo, Express, Node</p>
                 </Row>
                 <Row>
                   <Col sm={10} smOffset={1}>
@@ -36,20 +37,18 @@ class Portfolio extends Component {
                   </Col>
                 </Row>
                 <Row className="picture-row">
-                    <img src={ie} alt='intelligent education' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/>
-                    <img src={ie2} alt='intelligent education2' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/>
+                    <a href="https://courses.intelligent.education/" target="_blank"><img src={ie} alt='intelligent education' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                    <a href="https://courses.intelligent.education/" target="_blank"><img src={ie2} alt='intelligent education2' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
                 </Row>
-
               </Carousel.Item>
               <Carousel.Item>
                 <Row>
-                  <h1 className="section__title">BELAYTIONSHIP</h1>
+                  <a href="https://github.com/eddiemarovich/belaytionship" target="_blank"><h1 className="section__title">BELAYTIONSHIP</h1></a>
                   <p style={{textAlign:'center', marginTop: '20px'}}>ReactNative, Firebase</p>
-
                 </Row>
                 <Row>
                   <Col smOffset={1} sm={1}>
-                    <img src={belaytionship} alt='belaytionship' style={{height: '220px'}}/>
+                    <a href="https://github.com/eddiemarovich/belaytionship" target="_blank"><img src={belaytionship} alt='belaytionship' style={{height: '220px'}}/></a>
                   </Col>
                   <Col sm={8} smOffset={1}>
                     <p className="section__content">
@@ -58,15 +57,31 @@ class Portfolio extends Component {
                   </Col>
                 </Row>
               </Carousel.Item>
+              <Carousel.Item className="carousel-item">
+                <Row>
+                  <a href="http://theprofilepost.herokuapp.com" target="_blank"><h1 className="section__title">THE PROFILE POST</h1></a>
+                  <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Express, Node, Postgres</p>
+                </Row>
+                <Row>
+                  <Col sm={10} smOffset={1}>
+                    <p className="section__content">
+                      The Post is a spinoff of the athlete centric social media network for former and current athletes at both the professional and amateur levels, and is essentially an editorial platform where athletes can share their stories. The Post allows athletes to submit articles and testimonials on a platform geared towards inspiring others to pursue their athletic passions
+                    </p>
+                  </Col>
+                </Row>
+                <Row className="picture-row">
+                    <a href="http://theprofilepost.herokuapp.com" target="_blank"><img src={post1} alt='the post' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                    <a href="http://theprofilepost.herokuapp.com" target="_blank"><img src={post2} alt='the post' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                </Row>
+              </Carousel.Item>
               <Carousel.Item>
                 <Row>
-                  <h1 className="section__title">JAZZED</h1>
+                  <a href="http://jazzed.herokuapp.com/" target="_blank"><h1 className="section__title">JAZZED</h1></a>
                   <p style={{textAlign:'center', marginTop: '20px'}}>jQuery, Express, Postgres, Node</p>
-
                 </Row>
                 <Row>
                   <Col smOffset={1} sm={1}>
-                    <img src={jazzed} alt='jazzed' style={{height: '220px'}}/>
+                    <a href="http://jazzed.herokuapp.com/" target="_blank"><img src={jazzed} alt='jazzed' style={{height: '220px'}}/></a>
                   </Col>
                   <Col sm={8} smOffset={1}>
                     <p className="section__content">

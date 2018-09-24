@@ -1,12 +1,31 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color:lightgrey;
+}
+
+a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color:lightgrey;
+}
+
 .section {
-  padding: 60px;
+  padding: 40px;
 }
 
 
 .section__container {
   background-color: #ffffff;
   opacity: .95;
-
+  padding-bottom: 20px;
 }
 
 .portfolio {
@@ -31,8 +50,8 @@
   margin-bottom: 10px;
 }
 
-.carousel-control.right{
-  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+.carousel {
+  height: 50vh;
 }
 
 .carousel-control.left {
@@ -55,6 +74,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  justify-content: space-around;
 }
 
 .section__close {

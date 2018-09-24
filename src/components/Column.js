@@ -33,7 +33,7 @@ class Column extends Component {
         'content-section--selected': selectedSection === `${title}`
       })} style={{
         backgroundImage: `url(${this.renderBackgroundImage(title)})`
-      }}  xs={4}>
+      }}  sm={12} md={4}>
         <div className='content-container'>
           <h1
             className='content-container__title'
