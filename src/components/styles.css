@@ -21,12 +21,10 @@ a:active {
   padding: 60px;
 }
 
-
 .section__container {
   background-color: #ffffff;
   opacity: .95;
   padding-bottom: 20px;
-  /*height: 100%;*/
 }
 
 @media screen and (max-width: 768px){
@@ -41,6 +39,72 @@ a:active {
   .picture-row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .section__container {
+    height: 100vh !important;
+    overflow-y: scroll;
+  }
+
+  .content-container {
+    height: 25px
+  }
+
+  .content-container__title {
+    text-align: left !important;
+    margin-left: 40px;
+    font-size: 60px;
+    font-weight: normal;
+  }
+
+  .content-container__title:hover {
+    text-align: left !important;
+    margin-left: 40px;
+    font-size: 60px;
+    font-weight: normal;
+  }
+
+  .content-section {
+    height: 105px !important;
+  }
+
+  .content-section-container {
+    margin-top: 270px;
+  }
+
+  .home__logo {
+    margin-top: -270px;
+  }
+
+  .section__content-container {
+    margin-top: 75px;
+  }
+
+  .section__row {
+    margin-top: 75px;
+  }
+
+  .section__header {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 30;
+    margin-bottom: 50px;
+  }
+
+  .first-header {
+    margin-top: 50px;
+  }
+
+  .content-section__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .picture-row__picture {
+    margin-bottom: 10px;
   }
 }
 
@@ -76,6 +140,7 @@ a:active {
     background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
     background-repeat: repeat-x;
+    color: black;
 }
 
 .carousel-control.right {
@@ -84,6 +149,7 @@ a:active {
     background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0000) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
     background-repeat: repeat-x;
+    color: black;
 }
 
 .section__header {

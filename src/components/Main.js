@@ -32,7 +32,7 @@ class Main extends Component {
     return (
       <div>
         <Logo selectedSection={this.props.hoveredSection}/>
-        <div>
+        <div className="content-section-container">
           {data.map(e => {
             return (
               <Column

@@ -64,7 +64,7 @@ class Home extends Component {
   }
 
   render() {
-    const { hoveredSection, selectedSection } = this.state
+    const { hoveredSection } = this.state
       return (
         <Row className={classNames('home', {'home--inactive': hoveredSection !== null})}>
           {this.contentToRender()}

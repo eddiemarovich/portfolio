@@ -20,13 +20,13 @@ class Portfolio extends Component {
           <SectionHeader section='Portfolio' closeSection={() => this.props.closeSection()} />
           <Row className="section__row">
             <Carousel
-              interval={500000}
+              interval={5000000}
               pauseOnHover={true}
               indicators={false}
               >
               <Carousel.Item className="carousel-item">
                 <Row>
-                  <a href="https://courses.intelligent.education/" target="_blank"><h1 className="section__title">INTELLIGENT EDUCATION</h1></a>
+                  <a href="https://courses.intelligent.education/" target="_blank" rel="noopener noreferrer"><h1 className="section__title">INTELLIGENT EDUCATION</h1></a>
                   <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Mongo, Express, Node</p>
                 </Row>
                 <Row>
@@ -38,19 +38,19 @@ class Portfolio extends Component {
                 </Row>
                 <Row className="picture-row">
                   {/* <Col xs={11} md={8} mdOffset={1}> */}
-                    <a href="https://courses.intelligent.education/" target="_blank"><img src={ie} alt='intelligent education' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
-                    <a href="https://courses.intelligent.education/" target="_blank"><img src={ie2} alt='intelligent education2' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                    <a className="picture-row__picture" href="https://courses.intelligent.education/" target="_blank" rel="noopener noreferrer"><img src={ie} alt='intelligent education' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                    <a className="picture-row__picture" href="https://courses.intelligent.education/" target="_blank" rel="noopener noreferrer"><img src={ie2} alt='intelligent education2' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
                   {/* </Col> */}
                 </Row>
               </Carousel.Item>
               <Carousel.Item>
                 <Row>
-                  <a href="https://github.com/eddiemarovich/belaytionship" target="_blank"><h1 className="section__title">BELAYTIONSHIP</h1></a>
+                  <a href="https://github.com/eddiemarovich/belaytionship" target="_blank" rel="noopener noreferrer"><h1 className="section__title">BELAYTIONSHIP</h1></a>
                   <p style={{textAlign:'center', marginTop: '20px'}}>ReactNative, Firebase</p>
                 </Row>
                 <Row>
                   <Col smOffset={1} sm={1}>
-                    <a href="https://github.com/eddiemarovich/belaytionship" target="_blank"><img src={belaytionship} alt='belaytionship' style={{height: '220px'}}/></a>
+                    <a href="https://github.com/eddiemarovich/belaytionship" target="_blank" rel="noopener noreferrer"><img src={belaytionship} alt='belaytionship' style={{height: '220px'}}/></a>
                   </Col>
                   <Col sm={8} smOffset={1}>
                     <p className="section__content">
@@ -61,7 +61,7 @@ class Portfolio extends Component {
               </Carousel.Item>
               <Carousel.Item className="carousel-item">
                 <Row>
-                  <a href="http://theprofilepost.herokuapp.com" target="_blank"><h1 className="section__title">THE PROFILE POST</h1></a>
+                  <a href="http://theprofilepost.herokuapp.com" target="_blank" rel="noopener noreferrer"><h1 className="section__title">THE PROFILE POST</h1></a>
                   <p style={{textAlign:'center', marginTop: '20px'}}>React, Redux, Express, Node, Postgres</p>
                 </Row>
                 <Row>
@@ -72,18 +72,18 @@ class Portfolio extends Component {
                   </Col>
                 </Row>
                 <Row className="picture-row">
-                    <a href="http://theprofilepost.herokuapp.com" target="_blank"><img src={post1} alt='the post' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
-                    <a href="http://theprofilepost.herokuapp.com" target="_blank"><img src={post2} alt='the post' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                    <a href="http://theprofilepost.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src={post1} alt='the post' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
+                    <a href="http://theprofilepost.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src={post2} alt='the post' style={{height: '180px', borderRadius:'3px', opacity:'1'}}/></a>
                 </Row>
               </Carousel.Item>
               <Carousel.Item>
                 <Row>
-                  <a href="http://jazzed.herokuapp.com/" target="_blank"><h1 className="section__title">JAZZED</h1></a>
+                  <a href="http://jazzed.herokuapp.com/" target="_blank" rel="noopener noreferrer"><h1 className="section__title">JAZZED</h1></a>
                   <p style={{textAlign:'center', marginTop: '20px'}}>jQuery, Express, Postgres, Node</p>
                 </Row>
                 <Row>
                   <Col smOffset={1} sm={1}>
-                    <a href="http://jazzed.herokuapp.com/" target="_blank"><img src={jazzed} alt='jazzed' style={{height: '220px'}}/></a>
+                    <a href="http://jazzed.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={jazzed} alt='jazzed' style={{height: '220px'}}/></a>
                   </Col>
                   <Col sm={8} smOffset={1}>
                     <p className="section__content">

@@ -7,9 +7,8 @@ body {
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 800px){
   body {
-    background-color: #ffffff;
-    background-image: none;
+    background-size: auto;
   }
 }
